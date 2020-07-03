@@ -1,0 +1,11 @@
+<launch>
+    
+
+    <node name="kittiHelper" pkg="aloam_velodyne" type="kittiHelper" output="screen"> 
+        <param name="dataset_folder" type="string" value="/home/lee/experiment/6-phd_program/data/kitti/" />
+        <param name="sequence_number" type="string" value="07" />
+        <param name="subfolder" type="string" value="2011_09_30_drive_0027_sync" />
+        <param name="to_bag" type="bool" value="true" />
+        <param name="publish_delay" type="int" value="1" />
+    </node>
+</launch>
